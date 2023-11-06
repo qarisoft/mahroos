@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Journal | qarisoft</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/journal.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        h1,h2,h3,h4,h5,h6,a {
+            font-family: 'Tajawal', sans-serif !important;
+        }
+        .sq{
+            height: 50px;
+            /* width: 45px */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 4px;
+
+            /* background-color: aquamarine; */
+            background: #606060;
+
+            width: 100%;
+        }
+    </style>
+    <body style="font-family: 'Tajawal', sans-serif;">
+        <header class="header" data-page="journal">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="logo header_logo">
+                    <a class="d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_picture">
+                            <img src="svg/logo.svg" alt="qarisoft" />
+                        </span>
+                        <span class="text">
+                            <span class="brand">Mahroos</span>
+                        </span>
+                    </a>
+                </div>
+
+                <button
+                    class="header_trigger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#coursesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="coursesMenu"
+                                data-page="courses"
+                            >
+                                مساعدة
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="coursesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="courses" href="#" data-main="true">
+                                            مساعدة
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="course" href="#">مساعدة 1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">قريبا</a>
+                        </li><li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">قريبا</a>
+                        </li><li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">قريبا</a>
+                        </li>
+
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="#" data-page="about">عنا</a>
+                        </li>
+
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="#" data-page="contacts">الصفحة الرئيسية</a>
+                        </li>
+                    </ul>
+                    <ul class="promobar_socials d-flex align-items-center justify-content-center">
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <header class="page">
+            <div class="page_breadcrumbs">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+
+                        <ul class="page_breadcrumbs-list d-flex flex-wrap align-items-center">
+                            <li class="list-item">
+                                <a href="#" class="link">ريال</a>
+                            </li>
+                            
+                            <li class="list-item">السعودية</li>
+                        </ul>
+                        
+                        <div class="content-wrapper">
+                            <form class="page_main-form d-flex " style="direction: rtl;" action="#" method="post" data-type="search">
+                                <input class="field required" type="search" placeholder=" بحث …" />
+                                <i class="icon-search-solid icon"></i>
+                                <!-- <span> -->
+                                    <!-- الاقسام -->
+                                <!-- </span> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       
+        </header>
+
+
+        <!-- journal content start -->
+        <main class="journal">
+            <div class="container d-flex flex-column flex-lg-row justify-content-between">
+                <div class="panel d-flex align-items-center justify-content-between">
+                    
+                </div>
+                <div class="content" >
+                    <ul class="journal_list" style="direction: rtl;">
+                        <li class="journal_list-item" data-order="1">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <ul class="main_meta d-flex flex-wrap">
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-clock-solid icon mx-1"></i> February 07, 2021
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-user-solid icon mx-1"></i> علي احمد سعيد
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-link-solid icon mx-1"></i> عقارات
+                                    </li>
+                                </ul>
+                                <a class="main_title h3" href="#" target="_blank" rel="noopener noreferrer">
+                                     2023 عنوان ضخم مالوش اي داعي في عام
+                                </a>
+                                <p class="main_text">
+                                    In this sequence of four courses, you will summarize and demonstrate all stages of the UI/UX development
+                                    process, from user research to defining a project’s strategy, scope, and information architecture, to
+                                    developing sitemaps and wireframes
+                                </p>
+                                <a class="main_btn btn" href="#">
+                                    <span class="text">المزيد</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="journal_list-item" data-order="1">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <ul class="main_meta d-flex flex-wrap">
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-clock-solid icon mx-1"></i> February 07, 2021
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-user-solid icon mx-1"></i> علي احمد سعيد
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-link-solid icon mx-1"></i> عقارات
+                                    </li>
+                                </ul>
+                                <a class="main_title h3" href="#" target="_blank" rel="noopener noreferrer">
+                                     2023 عنوان ضخم مالوش اي داعي في عام
+                                </a>
+                                <p class="main_text">
+                                    In this sequence of four courses, you will summarize and demonstrate all stages of the UI/UX development
+                                    process, from user research to defining a project’s strategy, scope, and information architecture, to
+                                    developing sitemaps and wireframes
+                                </p>
+                                <a class="main_btn btn" href="#">
+                                    <span class="text">المزيد</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="journal_list-item" data-order="1">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <ul class="main_meta d-flex flex-wrap">
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-clock-solid icon mx-1"></i> February 07, 2021
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-user-solid icon mx-1"></i> علي احمد سعيد
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-link-solid icon mx-1"></i> عقارات
+                                    </li>
+                                </ul>
+                                <a class="main_title h3" href="#" target="_blank" rel="noopener noreferrer">
+                                     2023 عنوان ضخم مالوش اي داعي في عام
+                                </a>
+                                <p class="main_text">
+                                    In this sequence of four courses, you will summarize and demonstrate all stages of the UI/UX development
+                                    process, from user research to defining a project’s strategy, scope, and information architecture, to
+                                    developing sitemaps and wireframes
+                                </p>
+                                <a class="main_btn btn" href="#">
+                                    <span class="text">المزيد</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination d-flex align-items-center justify-content-sm-end">
+                        <ul class="pagination_pages d-flex">
+                            <li class="pagination_pages-page">
+                                <a class="page active" href="#">
+                                    <span class="page-number">1</span>
+                                </a>
+                            </li>
+                            <li class="pagination_pages-page">
+                                <a class="page" href="#">
+                                    <span class="page-number">2</span>
+                                </a>
+                            </li>
+                            <li class="pagination_pages-page">
+                                <a class="page" href="#">
+                                    <span class="page-number">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="pagination_next" href="#">
+                            <i class="icon-angle-right icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <aside class="sidebar collapse" style="direction: rtl;" id="sidebar">
+                    <div class="sidebar_block sidebar_block--nav">
+                        <h4 class="sidebar_block-header">للتسجيل</h4>
+                        <ul class="list">
+                            <li class="list-item">
+                                <i class="fa-solid fa-briefcase title"></i>
+                                <a class="link" href="#">
+                                    <span class="title m-1">التقديم الوظيفي</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                
+                                <a class="link" href="#">
+                                 <svg class="title" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.1685 12.9478C22.9997 11.0536 22.7217 10.6847 22.6167 10.5459C22.3753 10.2253 21.9891 10.0158 21.5803 9.79594C21.5572 9.78371 21.5373 9.76629 21.522 9.74503C21.5068 9.72378 21.4967 9.69927 21.4926 9.67345C21.4885 9.64763 21.4904 9.62121 21.4982 9.59626C21.506 9.57131 21.5195 9.54852 21.5377 9.52969C21.6134 9.45292 21.6716 9.36067 21.7082 9.25928C21.7449 9.15789 21.7591 9.04977 21.75 8.94234C21.7324 8.75185 21.6438 8.57494 21.5019 8.44669C21.3599 8.31845 21.1749 8.24825 20.9836 8.25H20.2524C20.221 8.25019 20.1897 8.25222 20.1586 8.25609C20.1373 8.24683 20.1152 8.23946 20.0925 8.23406C19.6594 7.31859 19.0664 6.06516 17.8374 5.45344C16.0144 4.54687 12.6563 4.5 12 4.5C11.3438 4.5 7.98565 4.54687 6.16503 5.45203C4.93596 6.06375 4.343 7.31719 3.90987 8.23266L3.90612 8.24016C3.88452 8.24319 3.8633 8.24854 3.84284 8.25609C3.81174 8.25222 3.78043 8.25019 3.74909 8.25H3.01643C2.82513 8.24825 2.64016 8.31845 2.4982 8.44669C2.35624 8.57494 2.26766 8.75185 2.25003 8.94234C2.2417 9.04952 2.25661 9.15723 2.29375 9.25811C2.33088 9.359 2.38936 9.45067 2.46518 9.52688C2.48332 9.54571 2.49684 9.5685 2.50466 9.59345C2.51249 9.6184 2.51441 9.64482 2.51027 9.67064C2.50613 9.69646 2.49606 9.72096 2.48083 9.74222C2.4656 9.76348 2.44564 9.7809 2.42253 9.79313C2.01378 10.0144 1.62565 10.2239 1.38612 10.5431C1.28112 10.6838 1.00362 11.0508 0.834401 12.945C0.740651 14.0109 0.726589 15.1144 0.800182 15.825C0.954401 17.3016 1.24362 18.1941 1.25581 18.2311C1.30019 18.3659 1.38188 18.4853 1.49141 18.5755C1.60093 18.6656 1.73379 18.7229 1.87456 18.7406V18.75C1.87456 18.9489 1.95358 19.1397 2.09423 19.2803C2.23488 19.421 2.42565 19.5 2.62456 19.5H5.24956C5.44847 19.5 5.63924 19.421 5.77989 19.2803C5.92054 19.1397 5.99956 18.9489 5.99956 18.75C6.40315 18.75 6.68393 18.6778 6.98159 18.6009C7.41133 18.4851 7.85059 18.4081 8.29409 18.3708C9.72425 18.2344 11.1464 18.1875 12 18.1875C12.8363 18.1875 14.3213 18.2344 15.7538 18.3708C16.199 18.4082 16.64 18.4855 17.0714 18.6019C17.3564 18.675 17.6269 18.7425 18.0014 18.7495C18.0014 18.9484 18.0805 19.1392 18.2211 19.2799C18.3618 19.4205 18.5525 19.4995 18.7514 19.4995H21.3764C21.5753 19.4995 21.7661 19.4205 21.9068 19.2799C22.0474 19.1392 22.1264 18.9484 22.1264 18.7495V18.7439C22.2675 18.7265 22.4008 18.6694 22.5107 18.5792C22.6206 18.489 22.7025 18.3694 22.7471 18.2344C22.7592 18.1973 23.0485 17.3048 23.2027 15.8283C23.2763 15.1172 23.2632 14.0156 23.1685 12.9478ZM5.2655 8.87391C5.6405 8.07703 6.0694 7.17516 6.833 6.795C7.93643 6.24563 10.2235 5.99812 12 5.99812C13.7766 5.99812 16.0636 6.24375 17.1671 6.795C17.9307 7.17516 18.3577 8.0775 18.7346 8.87391L18.7814 8.97563C18.8088 9.03353 18.821 9.0975 18.8166 9.16142C18.8123 9.22534 18.7917 9.28708 18.7567 9.34076C18.7217 9.39445 18.6736 9.43827 18.6169 9.46806C18.5601 9.49785 18.4967 9.51261 18.4327 9.51094C16.875 9.46875 13.5938 9.33375 12 9.33375C10.4063 9.33375 7.12503 9.47203 5.56503 9.51422C5.50098 9.51589 5.43757 9.50113 5.38085 9.47134C5.32413 9.44155 5.27599 9.39773 5.24102 9.34405C5.20605 9.29037 5.18541 9.22862 5.18108 9.1647C5.17675 9.10078 5.18887 9.03681 5.21628 8.97891C5.23268 8.94422 5.25003 8.90906 5.2655 8.87391ZM5.82471 12.6066C5.01837 12.7036 4.20687 12.7515 3.39471 12.75C2.89784 12.75 2.38549 12.6094 2.29034 12.1669C2.22518 11.8692 2.23221 11.7019 2.26737 11.5336C2.2969 11.3906 2.34378 11.2866 2.57815 11.25C3.18753 11.1562 3.52831 11.2739 4.52581 11.5678C5.18721 11.7623 5.6644 12.0216 5.93628 12.2269C6.07268 12.3281 6.00003 12.5925 5.82471 12.6066ZM16.2019 16.4503C15.585 16.5206 14.3513 16.4948 12.0141 16.4948C9.6769 16.4948 8.44362 16.5206 7.82675 16.4503C7.19018 16.3795 6.37878 15.7777 6.93284 15.2414C7.30175 14.888 8.16237 14.6236 9.30846 14.475C10.4546 14.3264 10.9397 14.25 12.0094 14.25C13.0791 14.25 13.515 14.2969 14.7103 14.4755C15.9057 14.6541 16.8089 14.9217 17.086 15.2419C17.5913 15.8156 16.838 16.3758 16.2019 16.4531V16.4503ZM21.7097 12.1664C21.616 12.6108 21.1003 12.7495 20.6053 12.7495C19.7776 12.7497 18.9506 12.7018 18.1285 12.6061C17.985 12.5925 17.9185 12.3408 18.0638 12.2264C18.3314 12.0159 18.8138 11.7619 19.4742 11.5673C20.4717 11.2734 21.0469 11.1558 21.541 11.2537C21.6614 11.2777 21.7252 11.407 21.7327 11.4881C21.7657 11.7139 21.758 11.9438 21.7097 12.1669V12.1664Z" fill="black"/>
+                                    </svg>
+                                    <span class="title m-1">التسجيل في كبتن التوصيل</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <!-- <i class="fa-solid fa-briefcase"></i> -->
+                                <i class="fa-solid fa-hotel title"></i>
+                                <a class="link" href="#">
+                                    <span class="title">تسجيل منشئة</span>
+                                </a>
+                            </li>
+
+                                
+                        </ul>
+                    </div>
+                    <div class="sidebar_block sidebar_block--types">
+                        <h5 class="sidebar_block-header text-center mb-1">الصفقات والعروض</h5>
+                        
+                        <div class="text-center d-flex justify-content-center mb-1" style="width: 100%;">
+                                عنوان فرعي
+
+                         </div>
+                         <div class="d-flex justify-content-center" style="gap: 8px; color: white;">
+                            <div class="sq ">
+                                <div class="text-center">60</div>
+                                <div class="text-center">Days</div>
+                            
+
+                            </div>
+                            <div class="sq  ">
+                                <div class="text-center">13</div>
+                                <div class="text-center">Hours</div>
+                            
+                            </div>
+                            <div class="sq  ">
+                                <div class="text-center">34</div>
+                                <div class="text-center">Min</div>
+                            
+                            </div>
+                            <div class="sq  ">
+                                <div class="text-center">56</div>
+                                <div class="text-center">Sec</div>
+                            
+                            </div>
+                         </div>
+                    </div>
+                </aside>
+
+            </div>
+
+        </main>
+        <!-- journal content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_wrapper d-sm-flex flex-wrap flex-lg-nowrap justify-content-lg-between">
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="1">
+                        <div class="logo logo--footer">
+                            <a class="d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_picture">
+                                    <img src="svg/logo.svg" alt="qarisoft" />
+                                </span>
+                                <span class="text">
+                                    <span class="brand">Mahroos</span>
+                                </span>
+                            </a>
+                        </div>
+                        <p class="footer_block-text">
+                            Curabitur non libero at lorem finibus lobortis. Ut auctor egestas pretium. Proin nunc ligula, venenatis tempor
+                        </p>
+                        <ul class="footer_block-socials d-flex align-items-center">
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="wrapper d-flex flex-column">
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="mailto:info@qarisoft.co">
+                                <i class="icon-envelope icon"></i>
+                                info@qarisoft.co
+                            </a>
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="tel:+966 54 585 6814">
+                                <i class="icon-phone-solid icon"></i>
+                                +966 54 585 6814
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="2">
+                        <h5 class="footer_block-header">About</h5>
+                        <ul class="footer_block-nav">
+                            <!-- <li class="footer_block-nav_item"> -->
+                                <!-- <a class="link" href="#">About </a> -->
+                            <!-- </li> -->
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">About Us</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">Find Store</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">Blog</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">Categories</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto m-sm-0" data-order="3">
+                        <h5 class="footer_block-header">Information</h5>
+                        <ul class="footer_block-list">
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">About Us</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">Find Store</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">Blog</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">Categories</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="4">
+                        <h5 class="footer_block-header">Instagram:</h5>
+                        <ul class="footer_block-instagram d-grid">
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_secondary">
+
+            </div>
+        </footer>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>
